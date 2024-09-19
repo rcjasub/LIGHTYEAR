@@ -1,0 +1,10 @@
+^C:\LY\BUILD\CMAKEFILES\0608F49AB76FE8D45EEE1698B86DFABC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/LY -BC:/LY/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/LY/build/LightYears.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
