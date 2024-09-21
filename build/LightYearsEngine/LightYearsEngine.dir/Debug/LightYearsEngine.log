@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/LY/LightYearsEngine/CMakeLists.txt
+  application.cpp
+  EntryPoint.cpp
+  Generating Code...
+  LightYearsEngine.vcxproj -> C:\LY\build\LightYearsEngine\Debug\LightYearsEngine.lib
