@@ -1,12 +1,13 @@
 #include "framework/application.h"
-#include <iostream>
-
+#include "framework/core.h"
+#include "framework/world.h"
 namespace ly
 {
 	Application::Application()
 		: mWindow{ sf::VideoMode(1000, 1000), "LighYears" },
 		mTargetFrameRate{ 30.f },
-		mTickClock{}
+		mTickClock{},
+		currentWorld{nullptr}
 	{
 	}
 
@@ -37,28 +38,29 @@ namespace ly
 				TickInternal(TargetDeltaTime);
 				RenderInternal();
 			}
-
-			std::cout << "Ticking at framerate: " << 1.f / frameDeltaTime << std::endl;
+			
 		}
 	}
 
 	void Application::TickInternal(float deltaTime)
 	{
+
 		Tick(deltaTime);
-	}
 
-	void Application::Tick(float deltaTime)
-	{
-		// Game logic update here
+		if (currentWorld)
+		{
+			currentWorld->BeginPlayInternal();
+			currentWorld->TickInternal(deltaTime);
+		}
 	}
-
+	
 	void Application::RenderInternal()
 	{
 		mWindow.clear();
 
 		Render();
 
-		mWindow.display();  // Keep only one display call
+		mWindow.display(); 
 	}
 
 	void Application::Render()
@@ -69,5 +71,10 @@ namespace ly
 		rect.setPosition(mWindow.getSize().x / 2.f, mWindow.getSize().y / 2.f);
 
 		mWindow.draw(rect);
+	}
+
+	void Application::Tick(float deltaTime)
+	{
+		
 	}
 }

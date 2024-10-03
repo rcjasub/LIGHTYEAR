@@ -4,12 +4,24 @@
     <ClCompile Include="C:\LY\LightYearsEngine\SRC\framework\application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\LY\LightYearsEngine\SRC\framework\world.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\LY\LightYearsEngine\SRC\framework\core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\LY\LightYearsEngine\SRC\EntryPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\LY\LightYearsEngine\include\framework\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LY\LightYearsEngine\include\framework\world.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\LY\LightYearsEngine\include\framework\core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\LY\LightYearsEngine\include\EntryPoint.h">

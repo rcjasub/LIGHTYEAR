@@ -1,14 +1,18 @@
 #pragma once
 #include<SFML/Graphics.hpp>
+#include "framework/core.h"
 
 namespace ly
 {
+	class World;
 	class Application
 	{
 	public:
 		Application();
-		
 		void Run();
+
+		template<typename WorldType>
+		weak<World> LoadWorld();
 
 	private:
 		void TickInternal(float deltaTime);
@@ -22,5 +26,17 @@ namespace ly
 
 		float mTargetFrameRate;
 		sf::Clock mTickClock;
+
+		shared<World> currentWorld;
+
 	};
+
+	template<typename WorldType>
+	weak<World> Application::LoadWorld()
+	{
+		shared<WorldType> newWorld{ new WorldType{this} };
+		currentWorld = newWorld;
+		return newWorld;
+	}
 }
+

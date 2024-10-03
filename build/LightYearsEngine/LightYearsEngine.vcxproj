@@ -438,6 +438,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClInclude Include="C:\LY\LightYearsEngine\include\framework\application.h" />
     <ClCompile Include="C:\LY\LightYearsEngine\SRC\framework\application.cpp" />
+    <ClInclude Include="C:\LY\LightYearsEngine\include\framework\world.h" />
+    <ClCompile Include="C:\LY\LightYearsEngine\SRC\framework\world.cpp" />
+    <ClInclude Include="C:\LY\LightYearsEngine\include\framework\core.h" />
+    <ClCompile Include="C:\LY\LightYearsEngine\SRC\framework\core.cpp" />
     <ClInclude Include="C:\LY\LightYearsEngine\include\EntryPoint.h" />
     <ClCompile Include="C:\LY\LightYearsEngine\SRC\EntryPoint.cpp" />
   </ItemGroup>
