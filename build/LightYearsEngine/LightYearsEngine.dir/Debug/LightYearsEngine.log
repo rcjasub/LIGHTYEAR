@@ -1,2 +1,4 @@
-﻿  world.cpp
+﻿  Actor.cpp
+  world.cpp
+  Generating Code...
   LightYearsEngine.vcxproj -> C:\LY\build\LightYearsEngine\Debug\LightYearsEngine.lib

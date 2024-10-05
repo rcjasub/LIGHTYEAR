@@ -5,7 +5,14 @@
       "out\\install\\x64-Debug"
     ]
   },
-  "ExpandedNodes": [],
-  "SelectedNode": "\\LightYears.sln",
+  "ExpandedNodes": [
+    "",
+    "\\LightYearsEngine",
+    "\\LightYearsEngine\\include",
+    "\\LightYearsEngine\\include\\framework",
+    "\\LightYearsEngine\\SRC",
+    "\\LightYearsEngine\\SRC\\framework"
+  ],
+  "SelectedNode": "\\LightYearsEngine\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
